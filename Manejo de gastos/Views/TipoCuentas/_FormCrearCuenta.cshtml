@@ -1,0 +1,18 @@
+﻿@model TipoCuentaDTO
+
+
+
+<h6>El tipo de cuenta se refiere al gasto en si, ejemplo: Tarjetas de credito, Suscripciones en linea, Pasajes.</h6>
+
+
+
+<form asp-action="Crear" asp-controller="TipoCuentas">
+
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label"></label>
+        <input type="text" asp-for="Nombre" placeholder="Ejemplo: Servicios" class="form-control" />
+        <span asp-validation-for="Nombre" asp-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+</form>
